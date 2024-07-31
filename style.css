@@ -14,3 +14,7 @@ body{
 background-repeat: no-repeat;
         }.container {
             height: 100vh; }
+            .botao_secundario {
+                background-color: transparent;
+                border: 2px solid var(--branco-principal);
+                }
