@@ -1,20 +1,34 @@
-:root{
+:root {
     --branco-principal: #FFFFFF;
-    --cinza-secundario:#C0C0C0;
+    --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    
 }
-body{
+
+body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    }.principal {
-        background-image: url(“img/Background.png”);
-        background-image: url(“img/Background.png”);
-background-repeat: no-repeat;
-        }.container {
-            height: 100vh; }
-            .botao_secundario {
-                background-color: transparent;
-                border: 2px solid var(--branco-principal);
-                }
+    font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte no HTML */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Adiciona a propriedade para cobrir todo o container */
+}
+
+.container {
+    height: 100vh;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--branco-principal); /* Adicione a cor do texto no botão */
+    text-decoration: none; /* Adiciona a propriedade para remover sublinhado */
+    padding: 10px 20px; /* Adiciona algum espaçamento interno ao botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    display: inline-block; /* Alinha o botão inline com o texto ao redor */
+}
