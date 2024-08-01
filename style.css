@@ -32,3 +32,16 @@ body {
     border-radius: 5px; /* Adiciona bordas arredondadas */
     display: inline-block; /* Alinha o botão inline com o texto ao redor */
 }
+
+.botao_azul {
+    background-color: var(--botao-azul); /* Utiliza a variável de cor azul */
+    border: none; /* Remove a borda padrão */
+    color: var(--branco-principal); /* Define a cor do texto como branco */
+    padding: 10px 20px; /* Adiciona algum espaçamento interno ao botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    display: inline-block; /* Garante que o botão se comporte como um elemento de bloco inline */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
