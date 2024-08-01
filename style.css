@@ -8,23 +8,32 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte no HTML */
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
-    background-size: cover; /* Adiciona a propriedade para cobrir todo o container */
+    background-size: cover;
 }
 
 .container {
     height: 100vh;
+    display: flex; /* Adiciona flexbox para alinhamento */
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.container__caixa {
+    margin: 0 6em;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 
 .container__imagem {
-    margin: 1em 0 2em 0; /* Top: 1em, Right: 0, Bottom: 2em, Left: 0 */
+    margin: 1em 0 2em 0; /* Ajusta o espaçamento ao redor da imagem */
 }
 
 .container__botao {
@@ -38,19 +47,16 @@ body {
     margin-bottom: 1em; /* Adiciona margem abaixo do botão */
 }
 
-.container__caixa {
-    margin: 0 6em; /* Top e Bottom: 0, Right e Left: 6em */
-}
-
 .botao_azul {
-    background-color: var(--botao-azul); /* Utiliza a variável de cor azul */
-    border: none; /* Remove a borda padrão */
-    color: var(--branco-principal); /* Define a cor do texto como branco */
-    padding: 10px 20px; /* Adiciona algum espaçamento interno ao botão */
-    text-decoration: none; /* Remove o sublinhado do texto */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    display: inline-block; /* Garante que o botão se comporte como um elemento de bloco inline */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    font-weight: 700; /* Define o peso da fonte como negrito */
-    text-align: center; /* Centraliza o texto dentro do botão */
+    background-color: var(--botao-azul);
+    border: none;
+    color: var(--branco-principal);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em 0; /* Adiciona margem acima e abaixo do botão azul */
 }
