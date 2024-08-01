@@ -11,52 +11,57 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin: 0; /* Remove margens padrão do body */
 }
 
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px; /* Adiciona um padding ao redor da seção principal */
 }
 
 .container {
-    height: 100vh;
-    display: flex; /* Adiciona flexbox para alinhamento */
-    flex-direction: column; /* Coloca os itens em uma coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Define um máximo de largura para o contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona padding interno */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
 }
 
 .container__caixa {
-    margin: 0 6em;
-    text-align: center; /* Centraliza o texto dentro do contêiner */
+    text-align: center; /* Centraliza o texto e os elementos dentro do contêiner */
 }
 
 .container__imagem {
     margin: 1em 0 2em 0; /* Ajusta o espaçamento ao redor da imagem */
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.botoes-container {
+    margin-top: 20px; /* Adiciona margem superior para separar os botões da imagem */
+}
+
+.container__botao, .botao_azul {
+    display: block; /* Faz com que os botões ocupem toda a largura disponível */
+    margin: 10px auto; /* Adiciona margem automática lateral e separação vertical */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content; /* Ajusta a largura do botão para o conteúdo */
 }
 
 .container__botao {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
     color: var(--branco-principal);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 1em; /* Adiciona margem abaixo do botão */
 }
 
 .botao_azul {
     background-color: var(--botao-azul);
     border: none;
     color: var(--branco-principal);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 16px;
     font-weight: 700;
-    text-align: center;
-    margin: 1em 0; /* Adiciona margem acima e abaixo do botão azul */
 }
