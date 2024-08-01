@@ -23,14 +23,23 @@ body {
     height: 100vh;
 }
 
-.botao_secundario {
+.container__imagem {
+    margin: 1em 0 2em 0; /* Top: 1em, Right: 0, Bottom: 2em, Left: 0 */
+}
+
+.container__botao {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
-    color: var(--branco-principal); /* Adicione a cor do texto no botão */
-    text-decoration: none; /* Adiciona a propriedade para remover sublinhado */
-    padding: 10px 20px; /* Adiciona algum espaçamento interno ao botão */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    display: inline-block; /* Alinha o botão inline com o texto ao redor */
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 1em; /* Adiciona margem abaixo do botão */
+}
+
+.container__caixa {
+    margin: 0 6em; /* Top e Bottom: 0, Right e Left: 6em */
 }
 
 .botao_azul {
